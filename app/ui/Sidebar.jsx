@@ -3,7 +3,7 @@ import {
     MdShoppingBag,
     MdPeople,
 } from "react-icons/md";
-import MenuLink from "./MenuLink";
+import MenuLink from "./Menulink";
 import {useState} from "react";
 
 const menuItems = [
