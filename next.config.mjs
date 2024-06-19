@@ -20,5 +20,12 @@ const nextConfig = {
     }
 };
 
+try {
+    // Your code before line 1 that might throw errors
+} catch (error) {
+    console.error("Error:", error);
+    // Handle the error gracefully (e.g., log it, display an error message)
+}
+
 // Export the combined configuration
 export default withNextra(nextConfig);
