@@ -22,12 +22,12 @@ export default {
         ),
     },
 
-    navs: [
-        {
-            title: 'app router and pages router',
-            url: '/front-end/1',
-        },
-    ],
+    // navs: [
+    //     {
+    //         title: 'app router and pages router',
+    //         url: '/front-end/1',
+    //     },
+    // ],
 
     // ... other theme options
 }
