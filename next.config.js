@@ -1,9 +1,9 @@
-import nextra from 'nextra';
-
-const withNextra = nextra({
-    theme: "nextra-theme-docs",
-    themeConfig: "./theme.config.jsx",
-});
+// import nextra from 'nextra';
+//
+// const withNextra = nextra({
+//     theme: "nextra-theme-docs",
+//     themeConfig: "./theme.config.jsx",
+// });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -13,5 +13,5 @@ const nextConfig = {
     }
 };
 
-export default withNextra(nextConfig);
-// export default withNextra;
+// export default withNextra(nextConfig);
+export default nextConfig;
