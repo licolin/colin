@@ -30,4 +30,4 @@
     // ],
 
     // ... other theme options
-}
+// }
