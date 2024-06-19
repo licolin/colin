@@ -27,14 +27,6 @@ export default {
             title: 'app router and pages router',
             url: '/front-end/1',
         },
-        {
-            title: 'API',
-            url: '/api',
-        },
-        {
-            title: 'GitHub',
-            url: 'https://github.com/your-repo',
-        },
     ],
 
     // ... other theme options
