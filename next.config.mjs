@@ -2,16 +2,16 @@ import nextra from 'nextra';
 
 const withNextra = nextra({
     theme: 'nextra-theme-docs',
-    themeConfig: './theme.config.jsx'
+    themeConfig: './theme.config.js'
 });
 
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//     output: "export",
-//     images: {
-//         unoptimized: true
-//     }
-// };
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    output: "export",
+    images: {
+        unoptimized: true
+    }
+};
 
-// export default withNextra(nextConfig);
-export default withNextra;
+export default withNextra(nextConfig);
+// export default withNextra;
