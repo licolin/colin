@@ -3,6 +3,8 @@ import {
     MdShoppingBag,
     MdPeople,
 } from "react-icons/md";
+import { GrDocumentStore } from "react-icons/gr";
+
 import MenuLink from "./Menulink";
 import {useState} from "react";
 
@@ -18,25 +20,15 @@ const menuItems = [
         ],
     },
     {
-        title: "python",
+        title: "blog",
         list: [
             {
-                title: "xxxxx",
-                path: "/user/component",
-                icon: <MdPeople/>,
-            },
+                title: "blog",
+                path: "/about",
+                icon: <GrDocumentStore/>,
+            }
         ],
-    },
-    {
-        title: "next.js",
-        list: [
-            {
-                title: "yyyyy",
-                path: "/user/component",
-                icon: <MdPeople/>,
-            },
-        ],
-    },
+    }
 ];
 
 
@@ -48,7 +40,7 @@ const Sidebar = () => {
 
     return (
         <div
-            className={`fixed h-dvh transition-all duration-1000 ease-in-out bg-blue-600 p-2 z-10 ${
+            className={`fixed h-dvh transition-all duration-1000 ease-in-out bg-blue-600 p-2 z-20 ${
                 isExpanded ? 'w-60' : 'w-14'
             }`}
             onMouseEnter={handleMouseEnter}
