@@ -10,7 +10,7 @@ const nextConfig = {
     basePath:process.env.BASE_PATH,
     assetPrefix:process.env.ASSET_PREFIX,
     output: "export",
-    reactStrictMode:true,
+    // reactStrictMode:true,
     distDir:'dist',
     images: {
         unoptimized: true
