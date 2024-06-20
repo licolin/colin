@@ -11,7 +11,7 @@ const nextConfig = {
     // assetPrefix:process.env.ASSET_PREFIX,
     output: "export",
     // reactStrictMode:true,
-    // distDir:'dist',
+    distDir:'doc',
     images: {
         unoptimized: true
     }
