@@ -14,7 +14,7 @@ const menuItems = [
         list: [
             {
                 title: "me",
-                path: `${process.env.BASE_PATH}/me`,
+                path: `/me`,
                 icon: <MdPeople/>,
             },
         ],
@@ -24,7 +24,7 @@ const menuItems = [
         list: [
             {
                 title: "blog",
-                path: `${process.env.BASE_PATH}/about`,
+                path: `/about`,
                 icon: <GrDocumentStore/>,
             }
         ],
