@@ -80,7 +80,7 @@ jobs:
       - name: Build with Next.js
         env:
           BASE_PATH: "/colin"
-          ASSET_PREFIX: "/colin"
+#          ASSET_PREFIX: "/colin"
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
