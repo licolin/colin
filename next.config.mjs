@@ -8,11 +8,8 @@ const withNextra = nextra({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     basePath:'/colin',
-    // assetPrefix:'/colin',
     output: "export",
     trailingSlash: true,
-    // reactStrictMode:true,
-    // distDir:'doc',
     images: {
         unoptimized: true
     }

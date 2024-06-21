@@ -16,3 +16,18 @@ first you should comment the block below
     # You may remove this line if you want to manage the configuration yourself.
     # static_site_generator: next  should comment the property
     #  enablement: false
+```
+at your next.config.mjs, you should add a property,just like below,the basePath is your repository name
+
+```javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    basePath:'/colin',
+    output: "export",
+    trailingSlash: true,
+    images: {
+        unoptimized: true
+    }
+};
+```
+
