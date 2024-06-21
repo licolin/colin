@@ -2,3 +2,17 @@ The mixed use of app router and pages router is uncommon, but Nextra only suppor
 This article briefly describes how to use Nextra, as well as the mixed use of app router and pages router.
 
 You only need to add a pages folder to the project root directory. Now you have both the app folder and the pages folder. Next, you need to consider how to switch between pages.
+
+if you use github Actions to build and deploy your application, as it is a next project,so you may choose next Configure template
+first you should comment the block below
+
+```yaml
+- name: Setup Pages
+  uses: actions/configure-pages@v5
+  # with:
+    # Automatically inject basePath in your Next.js configuration file and disable
+    # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
+    #
+    # You may remove this line if you want to manage the configuration yourself.
+    # static_site_generator: next  should comment the property
+    #  enablement: false
