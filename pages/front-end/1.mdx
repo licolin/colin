@@ -43,4 +43,17 @@ The directory structure is roughly divided into four main categories, namely fro
 }
 ```
 
+With the above content, it can ensure that the CI/CD process runs normally and the page structure renders correctly, but the Nextra documentation page navigation does not work. Therefore, it is necessary to add the configuration item navs in theme.config.jsx.
 
+```javascript
+export default {
+    navs: [
+        {
+            title: 'app router and pages router',
+            url: '/front-end/1',
+        },
+    ],
+}
+```
+
+url represents the access path
