@@ -25,11 +25,11 @@ export default {
     // navs: [
     //     {
     //         title: 'app router and pages router',
-    //         url: '/front-end/1',
+    //         url: '/frontend/1',
     //     },
     //     {
     //         title: '顶点自动化',
-    //         url: '/front-end/2',
+    //         url: '/frontend/2',
     //     },
     // ],
 }

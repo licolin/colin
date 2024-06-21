@@ -24,7 +24,7 @@ const menuItems = [
         list: [
             {
                 title: "blog",
-                path: `/about`,
+                path: `/frontend/1`,
                 icon: <GrDocumentStore/>,
             }
         ],
