@@ -10,6 +10,6 @@ pnpm dev
 # ord
 bun dev
 ```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://licolin.github.io/colin/](http://localhost:3000) with your browser to see the result.
 ## Deploy on Github Action
 
