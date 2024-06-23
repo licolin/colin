@@ -1,0 +1,15 @@
+
+Configure your Git username and email. These will be used for your commits.
+```shell
+git config --global user.name "Your Name"
+git config --global user.email "your.email@xxx.com"
+```
+To authenticate with GitHub using SSH, generate an SSH key pair. If you already have an SSH key, you can skip this step.
+```shell
+ssh-keygen -t rsa -C "your.email@example.com"
+```
+
+Go to GitHub's SSH and GPG keys settings and add a new SSH key. Paste your public key and save.
+your public key generally at /User/Administrator/.ssh (linux ~/.ssh/),and the name of which suffixed with .pub
+
+
