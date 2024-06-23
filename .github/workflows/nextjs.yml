@@ -77,6 +77,8 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Clean Next.js cache
+        run: rm -rf .next/cache/**
       - name: Build with Next.js
         env:
           BASE_PATH: "/colin"
