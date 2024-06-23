@@ -1,5 +1,5 @@
 {
-  "frontend": "Frontend",
-  "python": "Python",
-  "other": "Other"
+  "frontend": "frontend",
+  "python": "python",
+  "other": "other"
 }
