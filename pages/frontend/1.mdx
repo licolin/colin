@@ -17,6 +17,21 @@ first you should comment the block below
     # static_site_generator: next  should comment the property
     #  enablement: false
 ```
+Additionally, due to caching issues causing the Action package deployment to GitHub Pages to not display the page correctly even after the _meta.json has changed, the nextjs.yml needs to include a module to prevent this problem.
+```yaml
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Clean Next.js cache
+        run: rm -rf .next/cache/**
+      - name: Build with Next.js
+        env:
+          BASE_PATH: "/colin"
+#          ASSET_PREFIX: "/colin"
+        run: ${{ steps.detect-package-manager.outputs.runner }} next buildhould comment the property
+```
+
+
+
 at your next.config.mjs, you should add a property,just like below,the basePath is your repository name
 
 ```javascript
