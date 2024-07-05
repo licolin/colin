@@ -1,0 +1,30 @@
+Decimal numbers with fractions often cause rounding issues. For example, when rounding 0.355 to two decimal places using round(0.355, 2) in Python, the result is 0.35. Why does this happen?
+
+When information is input into a computer, it is converted into machine code, a series of 0s and 1s, which means binary data. The decimal 0.355, when converted to binary, results in 0.0101101111… (infinitely repeating). Since a computer cannot represent this infinite repetition, it necessarily discards the repeating part. This results in the computer actually processing the number as 0.354999999999..., which when rounded to two decimal places, becomes 0.35.
+
+How can this issue be avoided? Below is a Python solution.
+```{python}
+
+from decimal import Decimal, ROUND_HALF_UP
+
+
+def round_n(value: int or str or float, n: int):
+    """
+    保留浮点数精度
+    :param value: 需要保留位数的值
+    :param n: 保留的精度
+    :return:
+    """
+    s = '0.' + '0' * n
+    result = Decimal(Decimal(str(value)).quantize(Decimal(s), ROUND_HALF_UP))
+
+    if result.is_nan():
+        result = Decimal(Decimal("0.00").quantize(Decimal(s), ROUND_HALF_UP))
+        raise Exception(f"result is NaN! value: {value}, s: {s}, result: {result}")
+
+    return result
+
+
+print(round_n(0.355, 2))
+
+```
